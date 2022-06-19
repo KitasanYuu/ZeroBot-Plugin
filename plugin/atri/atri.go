@@ -237,6 +237,11 @@ func init() { // 插件主体
 			process.SleepAbout1sTo2s()
 			ctx.SendChain(randText("我无法回应你的请求"))
 		})
+	engine.OnKeyword("test", isAtriSleeping, zero.OnlyToMe).SetBlock(true).
+		Handle(func(ctx *zero.Ctx) {
+			process.SleepAbout1sTo2s()
+			ctx.SendChain(randText("access"))
+		})
 }
 
 func randText(text ...string) message.MessageSegment {
