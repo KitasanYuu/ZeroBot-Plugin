@@ -21,7 +21,7 @@ const (
 	// 服务名
 	servicename = "atri"
 	// ATRI 表情的 codechina 镜像
-	res = ""
+	res = "https://github.com/KitasanYuu/zbpdata/tree/main/Atri"
 )
 
 func init() { // 插件主体
