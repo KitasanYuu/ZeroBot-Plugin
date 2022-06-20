@@ -242,7 +242,7 @@ func init() { // 插件主体
 			process.SleepAbout1sTo2s()
 			ctx.SendChain(randText("access"))
 		})
-	engine.OnKeyword([]string{"急"}, isAtriSleeping, zero.OnlyToMe).SetBlock(true).
+	engine.OnKeywordGroup([]string{"急"}, isAtriSleeping, zero.OnlyToMe).SetBlock(true).
 		Handle(func(ctx *zero.Ctx) {
 			process.SleepAbout1sTo2s()
 			ctx.SendChain(randImage("BJ.jpg"))
