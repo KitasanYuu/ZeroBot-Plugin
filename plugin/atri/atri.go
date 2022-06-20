@@ -21,7 +21,7 @@ const (
 	// 服务名
 	servicename = "atri"
 	// ATRI 表情的 codechina 镜像
-	res = "https://gitcode.net/u011570312/zbpdata/-/raw/main/Atri/"
+	res = "https://gitcode.net/Kitasan_Yuu/zbpdata/-/tree/main/Atri"
 )
 
 func init() { // 插件主体
@@ -242,6 +242,10 @@ func init() { // 插件主体
 			process.SleepAbout1sTo2s()
 			ctx.SendChain(randText("access"))
 		})
+	engine.OnFullMatchGroup([]string{"急"}, isAtriSleeping, zero.OnlyToMe).SetBlock(true).
+		Handle(func(ctx *zero.Ctx) {
+			process.SleepAbout1sTo2s()
+			ctx.SendChain(randImage("BJ.jpg"))
 }
 
 func randText(text ...string) message.MessageSegment {
