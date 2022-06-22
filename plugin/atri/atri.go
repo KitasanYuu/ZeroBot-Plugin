@@ -247,6 +247,10 @@ func init() { // 插件主体
 			process.SleepAbout1sTo2s()
 			ctx.SendChain(randImage("BJ.jpg"))
 		})
+	engine.OnFullMatch("cd").SetBlock(true).
+		Handle(func(ctx *zero.Ctx) {
+			ctx.SendChain(message.Text("cd"))
+		})
 }
 
 func randText(text ...string) message.MessageSegment {
