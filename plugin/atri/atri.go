@@ -247,7 +247,6 @@ func init() { // 插件主体
 			process.SleepAbout1sTo2s()
 			ctx.SendChain(randImage("BJ.jpg"))
 		})
-
 }
 
 func randText(text ...string) message.MessageSegment {
