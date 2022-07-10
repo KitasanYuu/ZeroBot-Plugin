@@ -28,8 +28,8 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/chat" // 基础词库
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/sleep_manage" // 统计睡眠时间
-	
-	//_ "github.com/KitasanYuu/ZeroBot-Plugin/tree/master/plugin/test1"//用户查询T0
+
+	// _ "github.com/KitasanYuu/ZeroBot-Plugin/tree/master/plugin/test1"//用户查询T0
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/atri" // ATRI词库
 
